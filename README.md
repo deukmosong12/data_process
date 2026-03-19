@@ -1,14 +1,14 @@
 # 🦺 YOLO Vision Pipeline
 
-> 시각 장애인용 온디바이스 길안내 AI 장치를 위한  
+> 시각 장애인용 온디바이스 길안내 데이터셋 구축을 위한  
 > YOLOv8 커스텀 모델 학습 + 자동 라벨링 통합 파이프라인
 
 ---
 
 ## 📌 프로젝트 개요
 
-기존 YOLOv8이 탐지하지 못하는 커스텀 객체(점자블록, 킥보드, 공사 장벽 등)를 추가 학습(Fine-tuning)하여  
-시각 장애인용 길안내 AI 디바이스에 탑재할 커스텀 탐지 모델을 구축합니다.
+기존 YOLOv8이 탐지하지 못하는 커스텀 객체(신호등,맨홀 뚜껑,보행자 도로 등)를 추가 학습하여  
+시각 장애인용 길안내 AI 디바이스에 탑재할 모델 데이터셋을 구축합니다.
 
 - CVAT 수작업 라벨링 데이터 → YOLOv8 학습 포맷 자동 변환
 - Fine-tuning으로 커스텀 모델(`best.pt`) 생성
@@ -29,8 +29,8 @@ yolo-vision-pipeline/
 │
 ├── config.py                      ← ⚙️  경로 · 파라미터 중앙 관리
 │
-├── run_train_pipeline.py          ← 🚀 학습 파이프라인 한 번에 실행
-├── run_detect_pipeline.py         ← 🚀 탐지 파이프라인 한 번에 실행
+├── run_train_pipeline.py          ←  학습 파이프라인 한 번에 실행
+├── run_detect_pipeline.py         ←  탐지 파이프라인 한 번에 실행
 │
 ├── scripts/
 │   ├── preprocess/
