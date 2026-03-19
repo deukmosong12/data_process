@@ -16,7 +16,7 @@
 
 ---
 
-## 🖼️ Detection 예시
+## 🖼️ 추가객체 탐지 예시
 
 ![Detection Example](https://github.com/user-attachments/assets/074da0a4-343f-4344-a0a2-88d67c23dae9)
 
