@@ -1,0 +1,29 @@
+# 가중치 파일 (용량 커서 제외, Google Drive 등에 별도 보관)
+*.pt
+*.pth
+*.onnx
+
+# 학습 결과 (선택적으로 올리기)
+results/
+
+# 데이터셋 이미지 (용량 커서 제외)
+dataset/raw_images/*
+dataset/train/images/*
+dataset/val/images/*
+!dataset/raw_images/.gitkeep
+!dataset/train/images/.gitkeep
+!dataset/val/images/.gitkeep
+
+# 탐지 출력 이미지
+outputs/label_image/*
+!outputs/label_image/.gitkeep
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS 파일
+.DS_Store
+Thumbs.db

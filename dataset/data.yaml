@@ -1,0 +1,38 @@
+# dataset/data.yaml
+# YOLOv8 학습 데이터셋 설정 파일
+# config.py 의 TARGET_CLASSES 와 순서가 반드시 일치해야 합니다.
+
+train: train/images
+val:   val/images
+
+nc: 28   # 클래스 수 (TARGET_CLASSES 개수와 동일하게 수정)
+
+names:
+  - wheelchair
+  - truck
+  - tree_trunk
+  - traffic_sign
+  - traffic_light
+  - table
+  - stroller
+  - stop
+  - scooter
+  - potted_plant
+  - pole
+  - person
+  - parking_meter
+  - movable_signage
+  - motorcycle
+  - kiosk
+  - fire_hydrant
+  - dog
+  - chair
+  - cat
+  - carrier
+  - car
+  - bus
+  - bollard
+  - bicycle
+  - bench
+  - barricade
+  - manhole
